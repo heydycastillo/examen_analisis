@@ -1,6 +1,9 @@
 public class arreglo_ordenado {
     
     public static boolean identificador(int[] array, int i,int n) {
+        if (i == n ) {
+            return true;
+        }
 
     }
     
