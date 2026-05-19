@@ -12,6 +12,39 @@ public class problema3 {
 
             contador += mergesort(array, temporal, izquierda, medio);
             contador += mergesort(array, temporal, medio + 1, derecha);
+            contador += merge(array, temporal, izquierda, medio, derecha);
+        }
+
+        return contador;
+    }
+    public  static int merge(int[] array, int[] temporal, int izquierda, int medio, int derecha) {
+
+        int i = izquierda;
+        int j = medio + 1;
+        int k = izquierda;
+
+        int contador = 0;
+
+        while (i <= medio && j <= derecha) {
+
+            if (array[i] <= array[j]) {
+                temporal[k++] = array[i++];
+            } else {
+                temporal[k++] = array[j++];
+                contador += (medio - i + 1);
+            }
+        }
+
+        while (i <= medio) {
+            temporal[k++] = array[i++];
+        }
+
+        while (j <= derecha) {
+            temporal[k++] = array[j++];
+        }
+
+        for (i = izquierda; i <= derecha; i++) {
+            array[i] = temporal[i];
         }
 
         return contador;
