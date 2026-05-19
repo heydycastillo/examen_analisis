@@ -4,7 +4,10 @@ public class arreglo_ordenado {
         if (i == n ) {
             return true;
         }
-
+        if (array[i] > array[i + 1]) {
+            return false;
+        }
+        return identificador(array, i + 1,n);
     }
     
     public static void main(String[] args) {
