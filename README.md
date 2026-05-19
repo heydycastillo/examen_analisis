@@ -1,8 +1,8 @@
 # examen parcial
 
-###estuiante: heydy castillo arocutipa**
+### estudiante: heydy castillo arocutipa
 
-###profesor:Josue Miguel Flores Parra**
+### profesor:Josue Miguel Flores Parra
 
 ## PROBLEMA 1. Verificar si un arreglo está ordenado.
 
